@@ -75,4 +75,10 @@ public class StringCalculatorTest {
     public void shouldHandleDifferentDelimitersOfVariousLengths() {
         assertEquals(10, StringCalculator.Add("//[**][%%]\n1**2%%3**4"));
     }
+
+    @Test
+    public void shouldHandleMultipleDelimiters() {
+        assertEquals(6, StringCalculator.Add("//[*][%]\n1*2%3"));
+    }
+
 }
