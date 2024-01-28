@@ -55,4 +55,14 @@ public class StringCalculatorTest {
         });
         assertEquals("Negatives not allowed: -2, -4", exception.getMessage());
     }
+
+    @Test
+    public void numbersGreaterThan1000ShouldBeIgnored() {
+        assertEquals(2, StringCalculator.Add("2,1001"));
+    }
+
+    @Test
+    public void numbersEqualToOrLessThan1000ShouldBeIncluded() {
+        assertEquals(1002, StringCalculator.Add("2,1000"));
+    }
 }
