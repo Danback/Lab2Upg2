@@ -28,4 +28,14 @@ public class StringCalculatorTest {
     public void shouldHandleNewLinesAsOnlyDelimiter() {
         assertEquals(10, StringCalculator.Add("1\n2\n3\n4"));
     }
+
+    @Test
+    public void shouldHandleCustomDelimiter() {
+        assertEquals(3, StringCalculator.Add("//;\n1;2"));
+    }
+
+    @Test
+    public void shouldHandleCustomDelimiterWithMultipleNumbers() {
+        assertEquals(10, StringCalculator.Add("//-\n1-2-3-4"));
+    }
 }
