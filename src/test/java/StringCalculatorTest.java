@@ -18,4 +18,14 @@ public class StringCalculatorTest {
     public void shouldReturnSumOnMultipleNumbers() {
         assertEquals(6, StringCalculator.Add("1,2,3"));
     }
+
+    @Test
+    public void shouldHandleNewLinesBetweenNumbers() {
+        assertEquals(6, StringCalculator.Add("1\n2,3"));
+    }
+
+    @Test
+    public void shouldHandleNewLinesAsOnlyDelimiter() {
+        assertEquals(10, StringCalculator.Add("1\n2\n3\n4"));
+    }
 }
