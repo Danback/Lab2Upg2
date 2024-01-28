@@ -65,4 +65,14 @@ public class StringCalculatorTest {
     public void numbersEqualToOrLessThan1000ShouldBeIncluded() {
         assertEquals(1002, StringCalculator.Add("2,1000"));
     }
+
+    @Test
+    public void shouldHandleDelimitersOfAnyLength() {
+        assertEquals(6, StringCalculator.Add("//[***]\n1***2***3"));
+    }
+
+    @Test
+    public void shouldHandleDifferentDelimitersOfVariousLengths() {
+        assertEquals(10, StringCalculator.Add("//[**][%%]\n1**2%%3**4"));
+    }
 }

@@ -39,6 +39,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.StringCalculatorTest.executor": "Run",
+    "JUnit.StringCalculatorTest.shouldHandleCustomDelimiter.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "uppgift2",
@@ -67,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706455269035</updated>
       <workItem from="1706455270092" duration="174000" />
-      <workItem from="1706455463327" duration="1538000" />
+      <workItem from="1706455463327" duration="2813000" />
     </task>
     <servers />
   </component>
